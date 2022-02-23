@@ -58,10 +58,6 @@ for (var i = 1; i < fatorial; i++) {
 let tempoTotal = performance.now() - inicio;
 console.log(`${fatorial}! = ${resultado} (${tempoTotal.toFixed(3)} milisegundos)`);
 
-//n! = n · (n-1) · (n-2) … 3 · 2 · 1
-
-
-
 /*
 Algoritmo 03 - Imprimir um relatório de resultados da disciplina javascript para 20 alunos.
 - As notas deverão ser números inteiros entre 0 e 100, criadas aleatoriamente;
@@ -70,8 +66,77 @@ Algoritmo 03 - Imprimir um relatório de resultados da disciplina javascript par
 - A impressão do relatório deve ter um título, os resultados mostrados linha a linha no formato "Aluno nr xx - Nota yy [(A/RE)PROVADO]" e um rodapé no com estatística final no formato "APROVADOS: XX (xx%) | REPROVADOS: YY (yy%)"
 */
 
+splitter = "Iniciando Algoritmo Nr 03";
+
+console.log(`
+${splitter}
+`);
+let titulo = "Relatório de Notas"
+let students = [];
+let studentsNumber = 20;
+
+let maxValueGrade = 100;
+let grade;
+
+let result;
+
+let report = [];
+let aprovedCounter = 0;
+let reprovedCounter = 0;
+
+function createGrade(){
+    grade =  Math.floor(Math.random() * maxValueGrade +1);
+}
+ 
+function createStudents(){
+    for (let aluno = 1; index <= studentsNumber; aluno++) {
+        students.push(aluno);
+    }
+}
+
+function createResult(){
+    if(grade >= 70){
+        result = "Aprovado";
+        aprovedCounter++;
+
+
+    }else{
+        result = "Reprovado";
+        reprovedCounter++;
+    }
+    
+}
+
+function createReport(){
+    console.log(titulo);
+    createStudents();
+    for (let index = 1; index <= studentsNumber; index++) {
+        createGrade();
+        createResult();
+        report.push([index,grade]);   
+        console.log(`Aluno nr ${index} - Nota ${grade} [${result}]`)
+        
+             
+    }
+    let ratioAproved = (aprovedCounter/studentsNumber)*100
+    let ratioReproved = (reprovedCounter/studentsNumber)*100
+    console.log(`APROVADOS: ${aprovedCounter} (${ratioAproved}%) | REPROVADOS: ${reprovedCounter} (${ratioReproved}%)`)
+    
+
+}
+
+createReport()
+
+
+
+
+
+
+
+
 /*
-Algoritmo 04 Criar um arrays com 1.000 números aleatórios não repetidos e ordená-los. Os números devem estar entre 0 e 5.000 (inclusives, ou seja incluindo o 0 e o 5.000).
+Algoritmo 04 Criar um arrays com 1.000 números aleatórios não repetidos e ordená-los. Os números devem estar entre 0 e 5.000 (inclusives, 
+ou seja incluindo o 0 e o 5.000).
 */
 
 /*
