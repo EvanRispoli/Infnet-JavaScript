@@ -127,17 +127,42 @@ function createReport(){
 
 createReport()
 
-
-
-
-
-
-
-
 /*
 Algoritmo 04 Criar um arrays com 1.000 números aleatórios não repetidos e ordená-los. Os números devem estar entre 0 e 5.000 (inclusives, 
 ou seja incluindo o 0 e o 5.000).
 */
+
+
+
+splitter = "Iniciando Algoritmo Nr 04";
+
+console.log(`
+${splitter}
+`);
+
+
+let number;
+let numbers = [];
+let limitNumber = 5000;
+let itemNumber = 1000;
+
+while(numbers.length < itemNumber) {
+    number =  Math.floor(Math.random() * limitNumber + 1);
+    if (!numbers.includes(number)) {
+        numbers.push(number);
+    }
+   
+}
+numbers.sort((a, b) => a - b)
+
+
+console.log(numbers);
+
+
+
+
+
+
 
 /*
 Algoritmo 05 Crie uma FUNÇÃO que receba 3 números inteiros e imprima que tipo de triângulo eles formam, equilátero, isósceles ou escaleno.
