@@ -18,11 +18,11 @@ let splitter = "Iniciando Algoritmo Nr 01";
 
 console.log(splitter);
 
-let startNumber = 0;
-let finalNumber = 100;
+
+let finalNumber = 1000000;
 let range = [];
 
-for (index = startNumber + 1; index < finalNumber; index++) {
+for (index = 0; index < finalNumber; index++) {
   if (index % 2 == 0 && index % 3 == 0) {
     range.push(index);
   }
@@ -146,7 +146,7 @@ let numbers = [];
 let limitNumber = 5000;
 let itemNumber = 1000;
 
-while(numbers.length < itemNumber) {
+while(numbers.length < itemNumber ) {
     number =  Math.floor(Math.random() * limitNumber + 1);
     if (!numbers.includes(number)) {
         numbers.push(number);
@@ -158,13 +158,30 @@ numbers.sort((a, b) => a - b)
 
 console.log(numbers);
 
-
-
-
-
-
-
 /*
 Algoritmo 05 Crie uma FUNÇÃO que receba 3 números inteiros e imprima que tipo de triângulo eles formam, equilátero, isósceles ou escaleno.
 Imprima o resultado da função para os valores (5,5,5), (45,45,90) e (25, 35, 45).
 */
+
+function triangulo(a,b,c){
+    if (a==b && a==c&& b==c) {
+        console.log("Triangulo Equilátero")
+    }else if(a == b && b != c ){
+        console.log("Triangulo Isosceles")
+    }else{
+        console.log("Triangulo Escaleno")
+    }
+}
+
+
+splitter = "Iniciando Algoritmo Nr 05";
+
+console.log(`
+${splitter}
+`);
+
+triangulo(5,5,5)
+
+triangulo(45,45,90)
+
+triangulo(25,35,45)
