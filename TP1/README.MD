@@ -1,4 +1,4 @@
-#Teste de PErformance 1
+# Teste de PErformance 1
 Teste de performance 1 da disciplina JavaScript do Curso de Análise e Desenvolvimento de Softwar do Intituto INFNET.
 Este Teste de Performance está dividido em duas etapas:
 
