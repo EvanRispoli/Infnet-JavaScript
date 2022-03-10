@@ -14,8 +14,10 @@ Algumas restrições de trabalho:
 
 Lembra do Algoritmo 01 do TP2 vamos modificá-lo para:
 
-Crie um componente que tenha duas caixas de texto que só aceitam números e tenha os rótulos (label) valor mínimo e valor máximo, checando sempre se o valor mínimo é menor que o valor máximo. O componente deve ainda possuir um botão calcular que quando acionado deve contar e imprimir quantos números existem entre valor mínimo e valor máximo (exclusives*) que sejam múltiplos de 2 e 3 simultaneamente. Não deve ser possível calcular se faltar algum dos números.
-* exclusives - Ou seja, quantos números existem entre valor mínimo e valor máximo, excluindo o valor mínimo e valor máximo
+  ✅ Crie um componente que tenha duas caixas de texto que só aceitam números e tenha os rótulos (label) valor mínimo e valor máximo, checando sempre se o valor mínimo é menor que o valor máximo. 
+  ✅ O componente deve ainda possuir um botão calcular que quando acionado deve contar e imprimir quantos números existem entre valor mínimo e valor máximo (exclusives*) que sejam múltiplos de 2 e 3 simultaneamente. 
+  -[ ] Não deve ser possível calcular se faltar algum dos números.
+  - * exclusives - Ou seja, quantos números existem entre valor mínimo e valor máximo, excluindo o valor mínimo e valor máximo
 
 ## Questão 02
 Lembra do Algoritmo 02 do TP2 vamos modificá-lo para:
