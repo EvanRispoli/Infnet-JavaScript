@@ -49,3 +49,7 @@ tfoot{
 .tdLogin{
     text-align: left;
 }
+
+#tipoTriangulo {
+    width: 200px;
+}
